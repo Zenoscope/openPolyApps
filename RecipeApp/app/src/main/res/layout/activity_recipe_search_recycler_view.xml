@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundColour"
+    tools:context="com.bit603.a2.UserAddModActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/t_titlebar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titlebar"
+        android:orientation="vertical">
+        <!--
+        android:background="@drawable/rectangle_background"
+        -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:queryHint="@string/searchHintRecipe"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/rectangle_background"
+            >
+
+            <!--
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            -->
+
+
+        </SearchView>
+
+        <!--
+            app:layout_constraintBottom_toTopOf="@+id/developerText"
+            -->
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Search favourites "
+            android:textSize="16sp"
+            android:textColor="@color/TextColour"
+            app:layout_constraintTop_toTopOf="@+id/search"
+            tools:layout_editor_absoluteX="382dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/layout">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

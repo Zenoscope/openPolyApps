@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundColour"
+    tools:context="com.bit603.a2.ShowRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="top"
+        android:gravity="top"
+        android:orientation="vertical">
+        <include layout="@layout/t_titlebar" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:foregroundGravity="top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|top"
+                android:layout_margin="10dp"
+                android:foregroundGravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/recipeTitle"
+                        style="@style/PrepCookText"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/recipeTitleHint"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/TextColour"
+                        android:textColorHint="@color/textHintColour"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:onClick="heartOnClick"
+                        app:srcCompat="@drawable/heart" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/recipePrepTitle"
+                    style="@style/PrepCookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/recipePrepTitle"
+                    android:textColor="@color/TextColour"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/title"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <EditText
+                    android:id="@+id/recipeEstTime"
+                    style="@style/PrepCookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipePrepHint"
+                    android:inputType="number|numberSigned"
+                    android:padding="10dp"
+                    android:textColor="@color/TextColour"
+                    android:textColorHint="@color/textHintColour"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/recipePrepTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <TextView
+                    android:id="@+id/descriptionTitle"
+                    style="@style/PrepCookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descriptionTitle"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/recipePrepTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/recipePrepTitle" />
+
+                <EditText
+                    android:id="@+id/recipeDescription"
+                    style="@style/PrepCookText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="2"
+                    android:padding="10dp"
+                    android:hint="@string/descriptionTitle"
+                    android:textColorHint="@color/textHintColour"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/descriptionTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionTitle" />
+
+                <TextView
+                    android:id="@+id/ingredientsTitle"
+                    style="@style/PrepCookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredientsTitle"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/recipeDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/recipeDescription"/>
+
+                <EditText
+                    android:id="@+id/recipeIngredients"
+                    style="@style/PrepCookText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:padding="10dp"
+                    android:scrollIndicators="right"
+                    android:hint="@string/ingredientsHint"
+                    android:textColorHint="@color/textHintColour"
+                    android:gravity="top|left"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/recipeDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/ingredientsTitle" />
+
+                <TextView
+                    android:id="@+id/methodTitle"
+                    style="@style/PrepCookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:text="@string/methodTitle"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/recipeDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/recipeIngredients" />
+
+                <EditText
+                    android:id="@+id/recipeMethod"
+                    style="@style/PrepCookText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:padding="10dp"
+                    android:scrollIndicators="right"
+                    android:hint="@string/methodHint"
+                    android:textColorHint="@color/textHintColour"
+                    android:textColor="@color/TextColour"
+                    app:layout_constraintStart_toStartOf="@+id/recipeDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/methodTitle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:text="@string/methodTitle"
+            >
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/SaveBtn"
+                style="@style/BackgroundColour"
+                android:textColor="@color/BtnTextColour"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/rounded_button"
+                />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/CancelBtn"
+                style="@style/BackgroundColour"
+                android:textColor="@color/BtnTextColour"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/rounded_button"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

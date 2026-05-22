@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="title_activity_recipe_search_view_adapter">RecipeSearchViewAdapter</string>
+    <!-- intent variable passing -->
+    <!-- can reuse as all values will be single values -->
+    <string name="intent"></string>
+
+    <!-- user login screen -->
+    <string name="chefText">Featuring recipes by the world-famous Fugu</string>
+    <string name="usernameHint">Enter your name</string>
+    <string name="userRecipeBtn">Let\'s cook!</string>
+    <string name="developer">Developed by Ryan</string>
+
+    <!--Show/Edit recipe field titles-->
+    <string name="recipePrepTitle">Estimated Time:</string>
+    <string name="descriptionTitle">Description:</string>
+    <string name="ingredientsTitle">Ingredients:</string>
+    <string name="methodTitle">Instructions:</string>
+
+    <!--Add recipe field titles-->
+    <string name="recipeTitleHint">Recipe Title</string>
+    <string name="recipePrepHint">10</string>
+    <string name="descriptionHint">Description</string>
+    <string name="ingredientsHint">Ingredients</string>
+    <string name="methodHint">Instructions</string>
+
+    <!-- Add Recipe buttons -->
+    <string name="SaveBtn">save</string>
+    <string name="CancelBtn">cancel</string>
+
+    <!-- Recipe List buttons -->
+    <string name="addRecipe">add</string>
+    <string name="searchRecipe">search</string>
+    <string name="searchHintRecipe">Username, description or ingredient</string>
+
+    <string name="titlebarText">"The Recipe Vault</string>
+
+    <!-- string template
+    // use:
+    android:text="@string/chefText"
+    <string name=" "> </string>
+    -->
+
+</resources>

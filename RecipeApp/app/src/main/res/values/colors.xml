@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFFFFF</color>
+    <color name="dark_blue">#0037FF</color>
+
+    <color name="TextColour">#fffe00</color>
+    <color name="FillColour">#fffe00</color>
+
+    <color name="textHintColour">#B4B309</color>
+        <color name="blueHintColour">#617ACE</color>
+
+    <color name="BtnTextColour">#0037FF</color>
+    <color name="BackgroundColour">#0037FF</color>
+
+
+
+
+
+</resources>
