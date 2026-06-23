@@ -1,0 +1,44 @@
+<resources>
+    <!-- login-->
+    <string name="app_name">Assignment 3</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="skipButton">"Skip"</string>
+
+    <!-- Main navigation -->
+    <string name="orderBtn">Place order</string>
+    <string name="viewOrderBtn">View order history</string>
+    <string name="viewYoutubeBtn">View Youtube channel</string>
+
+    <!-- Order screen buttons -->
+    <string name="completeOrderBtn">Complete Order</string>
+    <string name="mainMenuBtn">Main menu</string>
+
+    <!-- sign in screen-->
+    <string name="guestSignIn">Guest sign-in</string>
+
+    <!-- order history fields -->
+    <string name="orderNumberTitle">Order number:</string>
+    <string name="orderDateTitle">Order date:</string>
+    <string name="orderCostTitle">Cost: </string>
+
+    <!-- items: -->
+    <string name="costPerItemTitle">Cost per item:</string>
+
+    <!--increment item-->
+    <string name="incrementItemNum">+</string>
+    <string name="decrementItemNum">-</string>
+
+    <string name="web_client_id">286963781155-19hb4pldmdn9l5llileimo046psh4i23.apps.googleusercontent.com</string>
+
+    web_client_id
+
+</resources>

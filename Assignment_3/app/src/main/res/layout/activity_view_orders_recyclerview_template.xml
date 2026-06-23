@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoDescription"
+    style="@style/BackgroundColour"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ViewOrders">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/orderNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/orderNumberTitle"
+            android:textStyle="bold"
+            android:textColor="@color/TextColour"
+            app:layout_constraintLeft_toLeftOf="@+id/orderButton"
+            app:layout_constraintTop_toTopOf="@+id/orderButton" />
+
+        <TextView
+            android:id="@+id/orderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/orderNumberTitle"
+            app:layout_constraintTop_toTopOf="@+id/orderButton" />
+
+
+        <!---
+
+        <TextView
+            android:id="@+id/orderDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92dp"
+            android:text="@string/orderDateTitle"
+            app:layout_constraintLeft_toRightOf="@+id/orderNumber"
+            app:layout_constraintTop_toTopOf="@+id/orderButton" />
+
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="orderDate"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/orderDateTitle"
+            app:layout_constraintTop_toTopOf="@+id/orderButton" />
+            -->
+
+        <TextView
+            android:id="@+id/orderCostTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/orderCostTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/orderButton"
+            app:layout_constraintLeft_toLeftOf="@+id/orderButton"
+            app:layout_constraintTop_toBottomOf="@+id/orderNumberTitle" />
+
+        <!--
+        <TextView
+            android:id="@+id/orderCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="$00.00"
+            app:layout_constraintLeft_toRightOf="@+id/orderNumberTitle"
+            app:layout_constraintTop_toBottomOf="@+id/orderNumberTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/orderButton" />
+        -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

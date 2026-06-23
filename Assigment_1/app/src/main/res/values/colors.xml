@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Assessment 1
+-->
+<resources>
+    <color name="titleScreenGameName">#FF000000</color>
+    <color name="titleScreenText">#FF000000</color>
+    <color name="titleScreenButton">#1900D4</color>
+    <color name="titleScreenWarningBG">#FF2900</color>
+    <color name="titleScreenWarningText">#FFFFFF</color>
+    <color name="screenBackgroundColour">#00BCD4</color>
+    <color name="debugBackgroundColour">#FF2900</color>
+
+    <color name="cardListButton">#1900D4</color>
+    <color name="cardButtonText">#FFFFFF</color>
+
+    <color name="cardText">#1900D4</color>
+
+    <color name="earth">#1900D4</color>
+    <color name="wind">#1900D4</color>
+    <color name="water">#1900D4</color>
+    <color name="fire">#1900D4</color>
+    <color name="neutral">#1900D4</color>
+
+</resources>

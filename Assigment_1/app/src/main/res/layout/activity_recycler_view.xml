@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Assessment 1
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerViewActivity"
+    android:background="@color/screenBackgroundColour"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Card list"
+        android:textAlignment="center"
+        android:textColor="@color/titleScreenGameName"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardNameRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="291dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="main menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/rect_button_main"
+        app:backgroundTint="@null"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

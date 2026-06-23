@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackgroundColour">
+
+    <LinearLayout
+        android:id="@+id/mainWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gameName"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="@string/game_name"
+            android:textAlignment="center"
+            android:textColor="@color/titleScreenGameName"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/gameAuthors"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/game_authors"
+            android:textAlignment="center"
+            android:fontFamily="@font/aldrich"
+            android:textColor="@color/titleScreenText" />
+
+        <ImageView
+            android:id="@+id/gameLogo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/titleScreenText"
+            app:srcCompat="@drawable/gamelogo"/>
+
+        <TextView
+            android:id="@+id/gameVersion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/game_version"
+            android:textAlignment="center"
+            android:textColor="@color/titleScreenText" />
+
+        <TextView
+            android:id="@+id/gameWarning"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/titleScreenWarningBG"
+            android:gravity="center"
+            android:text="@string/warning"
+            android:textAlignment="center"
+            android:textColor="@color/titleScreenWarningText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cardList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/cardListButton"
+                android:background="@drawable/rect_button_main"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/cardStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/cardStatsButton"
+                android:background="@drawable/rect_button_main"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/app_creator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_creator"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_version"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

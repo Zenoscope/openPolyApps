@@ -4,19 +4,10 @@ package com.bit603.a2;
 
  * BIT603 Assessment 2
 
- * Name: Ryan McArthur
-
- * ID: 5105426
-
- * Created:  26 April 2025 (see create date)
-
- * User recycler view temp[late
-
- * @author Ryan McArthur
-
  * @version 1.0
 
  */
+
 
 
 /*

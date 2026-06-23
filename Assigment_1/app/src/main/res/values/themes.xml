@@ -1,0 +1,47 @@
+<!--
+     BIT603 Assessment 1
+
+     Name: Ryan McArthur
+     ID: 5105426
+     Created: 15 March 2025
+
+     String array for values
+
+     @author Ryan McArthur
+     @version 0.1a
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Application" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Application" parent="Base.Theme.Application" />
+
+    <style name="StatsText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/titleScreenButton</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StatsTitle" parent="StatsText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">false</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button" parent="StatsText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">false</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

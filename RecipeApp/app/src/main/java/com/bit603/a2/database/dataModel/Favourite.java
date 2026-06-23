@@ -12,21 +12,10 @@ import java.io.Serializable;
 
  * BIT603 Assessment 2
 
- * Name: Ryan McArthur
-
- * ID: 5105426
-
- * Created:  26 April 2025 (see create date)
-
- * Favourites, can be defined by a link to a user and a recipe.
- * The use can have a one-to-many link to the favourites
- * The favourite then has a one-to-one link to the recipe
-
- * @author Ryan McArthur
-
  * @version 1.0
 
  */
+
 
 
 // links the favourites database to the user and recipe databses

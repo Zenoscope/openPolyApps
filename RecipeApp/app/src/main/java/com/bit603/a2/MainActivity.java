@@ -13,16 +13,6 @@ import java.util.TimerTask;
 
  * BIT603 Assessment 2
 
- * Name: Ryan McArthur
-
- * ID: 5105426
-
- * Created:  26 April 2025 (see create date)
-
- * Main entrry point
-
- * @author Ryan McArthur
-
  * @version 1.0
 
  */

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Assessment 1
+-->
+
+<resources>
+    <string-array name="card_idArray">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+    </string-array>
+    <string-array name="nameArray">
+        <item>Goblin</item>
+        <item>Orc</item>
+        <item>Stone Golem</item>
+        <item>Thunderhawk</item>
+        <item>Shadow Revenant</item>
+        <item>Crystal Titan</item>
+        <item>Vampiric Banshee</item>
+        <item>Forest Dryad</item>
+        <item>Inferno Drake</item>
+        <item>Storm Elemental</item>
+    </string-array>
+    <string-array name="effectArray">
+        <item>When this monster is played, inflict 50 damage to all opponents</item>
+        <item>Intimidate an enemy monster for two turns, preventing it from attacking or defending</item>
+        <item>Increase your defence by 100 for the next three turns</item>
+        <item>Deal 120 damage to all enemies, but this monster takes 30 damage after use</item>
+        <item>Gain 50 battle power for each monster in the graveyard</item>
+        <item>Double your defence until the end of the opponents next turn</item>
+        <item>Drain 20 health from an enemy and heal your health by the same amount</item>
+        <item>When summoned place a Forest Token on the battlefield that gives +20 battle power to all allies</item>
+        <item>Increase your attack by 50 for each fire monster in play</item>
+        <item>Destroy an enemy monster if its attack is lower than this monster\'s battle power </item>
+    </string-array>
+    <string-array name="levelArray">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+        <item>6</item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="battlePowerArray">
+        <item>150</item>
+        <item>180</item>
+        <item>200</item>
+        <item>160</item>
+        <item>100</item>
+        <item>250</item>
+        <item>130</item>
+        <item>90</item>
+        <item>170</item>
+        <item>220</item>
+    </string-array>
+    <string-array name="playCostArray">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+        <item>4</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="elementArray">
+        <item>Neutral</item>
+        <item>Neutral</item>
+        <item>Earth</item>
+        <item>Wind</item>
+        <item>Neutral</item>
+        <item>Earth</item>
+        <item>Wind</item>
+        <item>Earth</item>
+        <item>Fire</item>
+        <item>Water</item>
+    </string-array>
+    <string-array name="artistArray">
+        <item>A.Thompson</item>
+        <item>J.Patel</item>
+        <item>T.Wright</item>
+        <item>T.Wright</item>
+        <item>T.Wright</item>
+        <item>R.Harris</item>
+        <item>D.Miller</item>
+        <item>R.Harris</item>
+        <item>D.Miller</item>
+        <item>C.Wilson</item>
+    </string-array>
+    <string-array name="unfinishedArray">
+        <item>No</item>
+        <item>No</item>
+        <item>No</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>No</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Yes</item>
+        <item>Yes</item>
+    </string-array>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColour">
+    <!--
+    tools:context=".CreateOrder"
+    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- app:layout_constraintBottom_toTopOf="mainMenu" -->
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:text="Total: $"
+        android:textColor="@color/TextColour"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/completeOrder"
+        app:layout_constraintRight_toLeftOf="@+id/orderTotal" />
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:text="00.00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/completeOrder"
+        app:layout_constraintRight_toRightOf="@+id/videoDescription" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainMenuBtn"
+        style="@style/ButtonStyle"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/videoDescription"
+        app:layout_constraintLeft_toLeftOf="@+id/videoDescription" />
+
+    <Button
+        android:id="@+id/completeOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completeOrderBtn"
+        style="@style/ButtonStyle"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/videoDescription"
+        app:layout_constraintRight_toRightOf="@+id/videoDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

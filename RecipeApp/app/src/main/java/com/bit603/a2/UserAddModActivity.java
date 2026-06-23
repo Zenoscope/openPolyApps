@@ -4,19 +4,10 @@ package com.bit603.a2;
 
  * BIT603 Assessment 2
 
- * Name: Ryan McArthur
-
- * ID: 5105426
-
- * Created:  26 April 2025 (see create date)
-
- * Add a user, and to the user database
-
- * @author Ryan McArthur
-
  * @version 1.0
 
  */
+
 
 
 import android.annotation.SuppressLint;

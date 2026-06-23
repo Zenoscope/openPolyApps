@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoDescription"
+    style="@style/BackgroundColour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColour"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="right"
+        app:layout_constraintLeft_toLeftOf="@+id/videoDescription"
+        app:layout_constraintTop_toTopOf="@+id/videoDescription"></androidx.recyclerview.widget.RecyclerView>
+    <!--
+    app:layout_constraintBottom_toTopOf="@+id/mainMenu"
+    -->
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainMenuBtn"
+        style="@style/ButtonStyle"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/videoDescription"
+        app:layout_constraintLeft_toLeftOf="@+id/videoDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

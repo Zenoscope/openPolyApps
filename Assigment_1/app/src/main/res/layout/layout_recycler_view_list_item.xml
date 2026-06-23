@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Assessment 1
+-->
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/cardListButton"
+
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:id="@+id/gameCard"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "10dp">
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/cardButtonText"
+         />
+
+    <TextView
+        android:id="@+id/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/cardNumber"
+        android:textColor="@color/cardButtonText"
+        android:textSize="20dp"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,29 @@
+<!--
+Assessment 1
+-->
+
+<resources>
+    <!-- main screen -->
+    <string name="app_name">Assignment 1</string>
+    <string name="game_name">Death by Dungeon</string>
+    <string name="game_authors">A game by AJ Thompson and Terry Wright</string>
+    <string name="game_version">Version 10</string>
+    <string name="app_version">App version 0.1a</string>
+    <string name="warning">This app is still in development.</string>
+    <string name="app_creator">App by Ryan McArthur</string>
+    <string name="cardListButton">Card List</string>
+    <string name="cardStatsButton">Card Statistics</string>
+
+    <!-- intent variable passing -->
+    <string name="intentDevMode"></string>
+    <!-- for the cards -->
+    <string name="intent_name"></string>
+    <string name="intent_effect_description"></string>
+    <string name="intent_level"></string>
+    <string name="intent_battle_power"></string>
+    <string name="intent_play_cost"></string>
+    <string name="intent_element"></string>
+    <string name="intent_artist_name"></string>
+    <string name="intent_unfinished"></string>
+
+</resources>
