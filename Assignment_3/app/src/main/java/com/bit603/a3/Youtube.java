@@ -55,8 +55,8 @@ public class Youtube extends AppCompatActivity {
 
         YoutubeApiService apiService = retrofit.create(YoutubeApiService.class);
 
-        String channelId = "UCi4gX3ydlk-53nVg386TEPg";
-        String apiKey = "AIzaSyDQolFDUoeR7w71IxLlDPbYRJa92g7sybA";
+        String channelId = <<channel_id>>;
+        String apiKey = <<api_key>>;
 
         Log.d("YOUTUBE","collecting API information");
 
